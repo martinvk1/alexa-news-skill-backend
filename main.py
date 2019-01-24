@@ -23,8 +23,8 @@ logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
 
 # Publisher Configuration
-publisher_name = 'Speech Kit'
-project_id = 1279
+publisher_name = 'Farnam Street'
+project_id = 1315
 
 blacklist = ['from', 'by'] + publisher_name.split()
 uri = os.environ.get('PSQL_DB')
