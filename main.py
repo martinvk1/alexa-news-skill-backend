@@ -27,9 +27,7 @@ publisher_name = 'Speech Kit'
 project_id = 1279
 
 blacklist = ['from', 'by'] + publisher_name.split()
-api_key = 'QITumvVBxGI7F4GDLRPiaiqdEEgzOktEJOXVkPX8'
-uri = 'postgres://u136kfhpq99ma7:p625fb4aa54d09cc85052c41d4cd1e712458b1ff00dd12cb6554cd92e136fe604@ec2-52-50-161-37.eu-west-1.compute.amazonaws.com:5432/d5icaceckkld4r'
-search_endpoint = 'https://alexa-search.herokuapp.com/api/search'
+uri = os.environ.get('PSQL_DB')
 
 # General function for fetching news from the database
 def psql_fetch(project_id, n):
